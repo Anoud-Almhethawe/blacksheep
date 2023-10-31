@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 const EventCard = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -13,7 +14,9 @@ const EventCard = () => {
   };
   return (
     <>
-      <div
+      <motion.div
+        whileHover={{ scale: 1.2, rotate: 360 }}
+        whileTap={{ scale: 0.8, rotate: -180, borderRadius: "100%" }}
         className="relative mt-10 p-10 pl-0 max-xl:mt-20 max-xl:w-full max-xl:p-0  max-sm:px-1"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
