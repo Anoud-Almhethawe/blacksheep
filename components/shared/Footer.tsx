@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import { footerLinks, socialMedia } from "@/constant/page";
 import Image from "next/image";
 import React from "react";
@@ -17,7 +18,7 @@ const Footer = () => {
             />
           </a>
           <div className="  mt-[20px] flex items-center justify-end gap-3 max-md:mt-10 ">
-            <div className="font-roboto text-[14px] text-primary-white">
+            <div className="font-roboto text-primary-white text-[14px]">
               Follow us
             </div>
             {socialMedia.map(icon => (
@@ -40,12 +41,12 @@ const Footer = () => {
         <div className=" flex flex-wrap justify-between  max-xl:pl-0 ">
           {footerLinks.map(section => (
             <div key={section.title}>
-              <h4 className="mb-3  cursor-pointer px-5 font-newsflashbb text-2xl font-medium leading-normal text-primary-green hover:text-primary-white">
+              <h4 className="font-newsflashbb  text-primary-green hover:text-primary-white mb-3 cursor-pointer px-5 text-2xl font-medium leading-normal">
                 {section.title}
               </h4>
               {section.links.map(link => (
                 <h4
-                  className="cursor-pointer gap-24 px-5 font-newsflashbb text-2xl leading-normal text-primary-green hover:text-primary-white"
+                  className="font-newsflashbb text-primary-green hover:text-primary-white cursor-pointer gap-24 px-5 text-2xl leading-normal"
                   key={link.name}
                 >
                   <a href={link.link}>{link.name}</a>
@@ -57,7 +58,7 @@ const Footer = () => {
       </div>
 
       <div className=" flex justify-between text-white max-sm:flex-col max-sm:items-center">
-        <div className="mt-1 flex flex-1 cursor-pointer items-center justify-start gap-2 font-proximanova text-sm">
+        <div className="font-proximanova mt-1 flex flex-1 cursor-pointer items-center justify-start gap-2 text-sm">
           <p>Copyright. All rights reserved.</p>
         </div>
       </div>

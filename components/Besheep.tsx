@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -13,9 +14,9 @@ const Besheep = () => {
       data-aos-offset="300"
       data-aos-easing="ease-in"
     >
-      <span className="w-[330px] text-center  font-newsflashbb text-6xl font-normal not-italic leading-[60px] text-primary-green max-sm:text-5xl">
+      <span className="font-newsflashbb text-primary-green  w-[330px] text-center text-6xl font-normal not-italic leading-[60px] max-sm:text-5xl">
         “ BE THE{" "}
-        <span className="text-6xl font-normal not-italic text-primary-black max-sm:text-5xl">
+        <span className="text-primary-black text-6xl font-normal not-italic max-sm:text-5xl">
           BLACK SHEEP{" "}
         </span>
         ”

@@ -1,3 +1,5 @@
+/* eslint-disable tailwindcss/classnames-order */
+/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import Image from "next/image";
 import React, { useRef, useState } from "react";

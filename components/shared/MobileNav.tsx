@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import React from "react";
 import {
@@ -20,7 +21,7 @@ const NavContent = () => {
               <SheetClose asChild key={item.id}>
                 <Link
                   href={item.id}
-                  className=" flex items-center justify-start gap-2 bg-transparent p-4 hover:text-primary-white"
+                  className=" hover:text-primary-white flex items-center justify-start gap-2 bg-transparent p-4"
                 >
                   <p className="font-proximanova ">{item.title}</p>
                 </Link>
@@ -58,7 +59,7 @@ const MobileNav = () => {
         </SheetTrigger>
         <SheetContent
           side="left"
-          className="w-[200px] border-none bg-primary-green"
+          className="bg-primary-green w-[200px] border-none"
         >
           <Link href="/" className="flex items-center gap-1">
             <Image

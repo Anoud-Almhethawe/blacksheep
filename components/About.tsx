@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import Image from "next/image";
 import React, { useRef } from "react";
@@ -17,12 +18,12 @@ const About = () => {
     <>
       <div className="flex items-center justify-between px-10 max-xl:flex-col-reverse max-xl:text-center  max-md:p-[8px]">
         <div className="pt-5 align-baseline">
-          <h1 className="font-newsflashbb text-[36px] font-normal not-italic text-primary-black max-sm:text-[25]">
+          <h1 className="font-newsflashbb text-primary-black text-[36px] font-normal not-italic max-sm:text-[25]">
             WHO WE ARE
           </h1>
           <p
-            className="min-md:text-[25px] min-sm:text-[10px] mt-[34px]  px-10  font-proximanova
-          text-[20px] font-normal leading-normal text-primary-black max-md:p-[8px] xl:w-[60%] "
+            className="min-md:text-[25px] min-sm:text-[10px] font-proximanova  text-primary-black  mt-[34px]
+          px-10 text-[20px] font-normal leading-normal max-md:p-[8px] xl:w-[60%] "
           >
             Ollie Daze is not just a brand; it`&apos;`s a realm beyond the
             ordinary, where extraordinary living becomes a way of life. Here,
@@ -33,8 +34,8 @@ const About = () => {
             <br /> DAZE: The act of being stunned from happiness.
           </p>
           <Button
-            className=" mt-[50px] h-[40px] w-[129px] rounded-none bg-primary-black text-center font-newsflashbb text-[16px] 
-          font-normal not-italic leading-4 text-primary-white hover:bg-primary-green hover:text-primary-black max-md:w-[200px] "
+            className=" bg-primary-black font-newsflashbb text-primary-white hover:bg-primary-green hover:text-primary-black mt-[50px] h-[40px] w-[129px] 
+          rounded-none text-center text-[16px] font-normal not-italic leading-4 max-md:w-[200px] "
           >
             Learn MOre
           </Button>

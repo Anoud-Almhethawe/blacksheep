@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import { navLinks } from "@/constant/page";
 import Image from "next/image";
@@ -31,7 +32,7 @@ const Navbar = () => {
               {navLinks.map(link => (
                 <li
                   key={link.id}
-                  className="cursor-pointer font-newsflashbb text-[30px] font-medium"
+                  className="font-newsflashbb cursor-pointer text-[30px] font-medium"
                 >
                   <a href={`${link.id}`}>{link.title}</a>
                 </li>
