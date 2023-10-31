@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
-import { motion } from "framer-motion";
 
 const EventCard = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -14,9 +13,7 @@ const EventCard = () => {
   };
   return (
     <>
-      <motion.div
-        whileHover={{ scale: 1.2, rotate: 360 }}
-        whileTap={{ scale: 0.8, rotate: -180, borderRadius: "100%" }}
+      <div
         className="relative mt-10 p-10 pl-0 max-xl:mt-20 max-xl:w-full max-xl:p-0  max-sm:px-1"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -35,17 +32,17 @@ const EventCard = () => {
         />
         <div className=" scope absolute bottom-10 left-3 pl-5">
           <div className="scope z-50 ">
-            <h1 className="scope font-newsflashbb text-[20px] font-normal not-italic leading-normal text-primary-white delay-1000 ease-linear  max-xl:text-[60px] max-md:bottom-9  max-md:text-[35px] max-sm:bottom-1  max-sm:text-[20px] md:text-[35px]">
+            <h1 className="scope font-newsflashbb text-primary-white text-[20px] font-normal not-italic leading-normal delay-1000 ease-linear  max-xl:text-[60px] max-md:bottom-9  max-md:text-[35px] max-sm:bottom-1  max-sm:text-[20px] md:text-[35px]">
               OLLIE DAZE THE BEACH GETAWAY
             </h1>
           </div>
           <div className={`${isHovering ? "visible" : "hidden"} scope pb-2 `}>
-            <Button className="scope h-[40px] w-[129px] rounded-none bg-primary-green text-center font-newsflashbb text-[16px] font-normal not-italic leading-4 text-primary-black delay-75 ease-in hover:bg-primary-white max-xl:mt-3 max-xl:w-[150px] max-md:w-[200px]">
+            <Button className="scope bg-primary-green font-newsflashbb text-primary-black hover:bg-primary-white h-[40px] w-[129px] rounded-none text-center text-[16px] font-normal not-italic leading-4 delay-75 ease-in max-xl:mt-3 max-xl:w-[150px] max-md:w-[200px]">
               VIEW EVENTS
             </Button>
           </div>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };
@@ -54,12 +51,12 @@ const EventSection = () => {
   return (
     <>
       <div className=" relative mt-20 flex w-fit flex-wrap p-10 max-xl:w-full max-md:m-0 max-md:mt-10 max-md:p-0">
-        <h1 className=" absolute left-10 font-newsflashbb text-[36px] font-normal not-italic text-primary-black ">
+        <h1 className=" font-newsflashbb text-primary-black absolute left-10 text-[36px] font-normal not-italic ">
           EVENTS
         </h1>
         <EventCard />
         <EventCard />
-        <h1 className="absolute right-10 pt-[14px] font-newsflashbb text-[24px] font-normal not-italic text-primary-green">
+        <h1 className="font-newsflashbb text-primary-green absolute right-10 pt-[14px] text-[24px] font-normal not-italic">
           VIEW ALL
         </h1>
       </div>
