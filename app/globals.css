@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("/styles/theme.css");
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
+}
+
+body {
+  font-family: "ProximaNova", "Roboto", sans-serif;
+}
+.scope {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+.vid {
+  height: inherit;
+}
+.center-div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.eye {
+  box-shadow: 2px 11px 37px -5px #000;
+  display: inline-block;
+  border: 2px solid #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.eye:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  top: -3px;
+  display: block;
+
+  z-index: 1;
+}
+
+.eye:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  top: 60px;
+
+  display: block;
+  background-color: #000;
+  z-index: 2;
+}
+
+.eye section {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+  animation: tourning 2s infinite linear;
+  animation-direction: alternate;
+}
+
+@keyframes tourning {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 80px;
+  }
+}
