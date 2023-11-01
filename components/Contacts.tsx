@@ -21,7 +21,7 @@ const Contacts = () => {
   return (
     <>
       <div className=" max-xl:text-center">
-        <div className="relative mx-auto mb-10 h-[438px]  w-full  p-10 ">
+        <div className="relative mx-auto  h-[438px]  w-full  p-10 ">
           <video
             controls
             poster="/assets/poster.svg"

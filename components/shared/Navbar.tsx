@@ -9,11 +9,11 @@ import MobileNav from "./MobileNav";
 const Navbar = () => {
   return (
     <>
-      <nav className=" absolute z-50  w-full p-20 max-md:px-[4px] max-md:py-[20px] md:mt-[2px] md:p-[60px] md:px-[6px] ">
-        <div className="mr-10 flex items-center justify-between  ">
+      <nav className=" absolute z-50  w-full p-10 max-md:px-[4px] max-md:py-[20px] md:mt-[2px] md:p-[60px] md:px-[6px] ">
+        <div className="mr-5 flex items-center justify-between  ">
           <Link
             href="/"
-            className="relative ml-20 flex flex-row gap-5 align-baseline max-md:ml-10"
+            className="relative ml-10 flex flex-row gap-5 align-baseline max-md:ml-5"
           >
             <Image
               src="/assets/logo.svg"
@@ -28,7 +28,7 @@ const Navbar = () => {
           <MobileNav />
 
           <div className="min-w-[120px] justify-between gap-[10px] max-md:hidden">
-            <ul className="mr-10 flex list-none flex-row items-start justify-end gap-5 text-center font-normal not-italic leading-[20px] max-md:mr-20 ">
+            <ul className="mr-5 flex list-none flex-row items-start justify-end gap-5 text-center font-normal not-italic leading-[20px] max-md:mr-10 ">
               {navLinks.map(link => (
                 <li
                   key={link.id}

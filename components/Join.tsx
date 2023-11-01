@@ -20,7 +20,7 @@ const Join = () => {
           consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
           labore.Lorem
         </p>
-        <Button className=" bg-primary-black font-newsflashbb text-primary-white hover:bg-primary-white hover:text-primary-black mt-[50px] h-[40px] w-[129px] rounded-none text-center text-[16px] font-normal not-italic leading-4 max-md:w-[200px] ">
+        <Button className=" bg-primary-black font-newsflashbb text-primary-white hover:bg-primary-white hover:text-primary-black mt-[20px] h-[40px] w-[129px] rounded-none text-center text-[16px] font-normal not-italic leading-4 max-md:w-[200px] ">
           join now
         </Button>
       </div>

@@ -5,7 +5,9 @@ import "./globals.css";
 
 import { roboto, newsflashbb, proximanova } from "../fonts/font";
 import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
+// import Footer from "@/components/shared/Footer";
+
+import Newfotter from "@/components/shared/Newfotter";
 
 export const metadata: Metadata = {
   title: "New Black Sheep",
@@ -38,7 +40,8 @@ export default function RootLayout({
         <body className="relative overflow-x-hidden">
           <Navbar />
           {children}
-          <Footer />
+          <Newfotter />
+          {/* <Footer /> */}
         </body>
       </html>
     </ClerkProvider>

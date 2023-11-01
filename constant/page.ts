@@ -46,3 +46,30 @@ export const socialMedia = [
 
   { src: "instagram", alt: "instagram logo" },
 ];
+
+export const newFooterLinks = [
+  {
+    title: "ABOUT",
+  },
+  {
+    title: "PREVIOUS EVENT",
+  },
+  {
+    title: "CONTACT US",
+  },
+  {
+    title: "PRIVACY POLICY",
+  },
+  {
+    title: "EVENTS",
+  },
+  {
+    title: "WORK WITH US",
+  },
+  {
+    title: "LOGIN",
+  },
+  {
+    title: "TERMS",
+  },
+];

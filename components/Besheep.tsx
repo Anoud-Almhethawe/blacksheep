@@ -14,9 +14,9 @@ const Besheep = () => {
       data-aos-offset="300"
       data-aos-easing="ease-in"
     >
-      <span className="font-newsflashbb text-primary-green  w-[330px] text-center text-6xl font-normal not-italic leading-[60px] max-sm:text-5xl">
+      <span className="font-newsflashbb text-primary-green  w-[330px] text-center text-6xl font-normal not-italic leading-[60px] max-sm:text-3xl">
         “ BE THE{" "}
-        <span className="text-primary-black text-6xl font-normal not-italic max-sm:text-5xl">
+        <span className="text-primary-black text-6xl font-normal not-italic  max-sm:text-3xl">
           BLACK SHEEP{" "}
         </span>
         ”

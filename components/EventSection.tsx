@@ -29,11 +29,11 @@ const EventCard = () => {
           height={290}
           className={`${
             isHovering ? "" : ""
-          } rounded-[30px] object-cover max-xl:h-auto max-xl:w-auto  max-md:p-[8px] `}
+          } rounded-[30px] object-cover max-xl:h-auto max-xl:w-auto  max-md:p-[8px]  `}
         />
         <div className=" scope absolute bottom-10 left-3 pl-5">
           <div className="scope z-50 ">
-            <h1 className="scope font-newsflashbb text-primary-white text-[20px] font-normal not-italic leading-normal delay-1000 ease-linear  max-xl:text-[60px] max-md:bottom-9  max-md:text-[35px] max-sm:bottom-1  max-sm:text-[20px] md:text-[35px]">
+            <h1 className="scope font-newsflashbb text-primary-white text-[20px] font-normal not-italic leading-normal delay-1000 ease-linear  max-xl:text-[50px] max-md:bottom-9  max-md:text-[35px] max-sm:bottom-1  max-sm:text-[20px] md:text-[25px]">
               OLLIE DAZE THE BEACH GETAWAY
             </h1>
           </div>
@@ -51,13 +51,16 @@ const EventCard = () => {
 const EventSection = () => {
   return (
     <>
-      <div className=" relative mt-20 flex w-fit flex-wrap p-10 max-xl:w-full max-md:m-0 max-md:mt-10 max-md:p-0">
-        <h1 className=" font-newsflashbb text-primary-black absolute left-10 text-[36px] font-normal not-italic ">
+      <div className=" relative mt-20 flex w-fit flex-wrap p-10 max-xl:w-full max-md:mt-10 max-md:p-0">
+        <h1 className=" font-newsflashbb text-primary-black absolute left-10 mb-5 text-[36px] font-normal not-italic max-xl:left-5">
           EVENTS
         </h1>
         <EventCard />
         <EventCard />
-        <h1 className="font-newsflashbb text-primary-green absolute right-10 pt-[14px] text-[24px] font-normal not-italic">
+        <h1
+          className="font-newsflashbb text-primary-green absolute right-10 mb-3 pt-[14px] text-[24px]
+         font-normal not-italic"
+        >
           VIEW ALL
         </h1>
       </div>

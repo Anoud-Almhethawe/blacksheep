@@ -34,7 +34,7 @@ const About = () => {
             <br /> DAZE: The act of being stunned from happiness.
           </p>
           <Button
-            className=" bg-primary-black font-newsflashbb text-primary-white hover:bg-primary-green hover:text-primary-black mt-[50px] h-[40px] w-[129px] 
+            className=" bg-primary-black font-newsflashbb text-primary-white hover:bg-primary-green hover:text-primary-black mt-[20px] h-[40px] w-[129px] 
           rounded-none text-center text-[16px] font-normal not-italic leading-4 max-md:w-[200px] "
           >
             Learn MOre
